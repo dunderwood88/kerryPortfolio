@@ -2,7 +2,8 @@
   "name": "kerryserver",
   "main": "server.js",
   "engines": {
-    "node": "7.6.x"
+    "node": "7.6.0",
+    "npm": "4.1.2"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
