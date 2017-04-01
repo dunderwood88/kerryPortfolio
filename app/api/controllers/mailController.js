@@ -6,8 +6,8 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth:{
-        user: rocess.env.MAIL_USER,
-        pass: rocess.env.MAIL_PASS
+        user: process.env.MAIL_USER,
+        pass: process.env.MAIL_PASS
     } 
 });
 
@@ -18,7 +18,7 @@ exports.send = function(req, res){
                     '<p>Message: ' + req.body.message + '</p>';
 
     var mailOptions = {
-        to: MAIL_USER,
+        to: process.env.MAIL_USER,
         subject: 'New message',
         from: req.body.name + ' <' + req.body.email + '>',
         sender: req.body.email,
