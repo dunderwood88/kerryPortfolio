@@ -1,5 +1,5 @@
 var request = require('request');
-var cfg = require('../../config');
+//var cfg = require('../../config');
 
 
 exports.getFeed = function(req, res){
