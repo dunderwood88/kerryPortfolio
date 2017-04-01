@@ -18,7 +18,7 @@ exports.send = function(req, res){
                     '<p>Message: ' + req.body.message + '</p>';
 
     var mailOptions = {
-        to: 'dan.underwood88@gmail.com',
+        to: cfg.mailUser,
         subject: 'New message',
         from: req.body.name + ' <' + req.body.email + '>',
         sender: req.body.email,
