@@ -1,0 +1,14 @@
+<!-- designArtworking.html -->
+<div class="contentContainer">
+
+    <div class="header">
+        <a class="inactive" href="/#contact">contact</a><a href="/#portfolio">portfolio</a>
+    </div>
+
+    <div class="grid">
+        <a ng-repeat="image in images" href="{{image}}" target="_blank">
+            <img ng-src="{{image}}" spinkit-image-preloader='circle-spinner'/>
+        </a>
+    </div>
+
+</div>
