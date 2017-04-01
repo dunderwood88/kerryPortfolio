@@ -2,7 +2,7 @@ var querystring = require('querystring');
 var request = require('request');
 var fs = require('fs');
 var path = require('path');
-var cfg = require('../../config');
+//var cfg = require('../../config');
 
 exports.getImages = function(req, res){
 
