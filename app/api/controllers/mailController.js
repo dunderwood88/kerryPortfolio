@@ -1,13 +1,13 @@
 var querystring = require('querystring');
 var request = require('request');
 var nodemailer = require('nodemailer');
-var cfg = require('../../config');
+//var cfg = require('../../config');
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth:{
-        user: cfg.mailUser,
-        pass: cfg.mailPass
+        user: rocess.env.MAIL_USER,
+        pass: rocess.env.MAIL_PASS
     } 
 });
 
@@ -18,7 +18,7 @@ exports.send = function(req, res){
                     '<p>Message: ' + req.body.message + '</p>';
 
     var mailOptions = {
-        to: cfg.mailUser,
+        to: MAIL_USER,
         subject: 'New message',
         from: req.body.name + ' <' + req.body.email + '>',
         sender: req.body.email,
