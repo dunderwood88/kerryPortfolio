@@ -1,14 +1,26 @@
 <!-- designArtworking.html -->
 <div class="contentContainer">
 
-    <div class="header">
-        <a class="inactive" href="/#contact">contact</a><a href="/#portfolio">portfolio</a>
-    </div>
+    <div class="contentFull">
 
-    <div class="grid">
-        <a ng-repeat="image in images" href="{{image}}" target="_blank">
-            <img ng-src="{{image}}" spinkit-image-preloader='circle-spinner'/>
-        </a>
+        <div class="header">
+            <div>
+                <a class="inactive" href="/#contact">Contact</a>
+                <a href="/#portfolio">Portfolio</a>
+            </div>
+
+        </div>
+
+        <div class="grid portfolio">
+            <a class="large" ng-repeat="image in images" href="{{image}}" target="_blank">
+                <img ng-src="{{image}}" spinkit-image-preloader='circle-spinner'/>
+            </a>
+        </div>
+
+        <div>
+            <p>All images &copy; Kerry O'Callaghan</p>
+        </div>
+
     </div>
 
 </div>

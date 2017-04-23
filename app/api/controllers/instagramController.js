@@ -3,10 +3,9 @@ var request = require('request');
 
 
 exports.getFeed = function(req, res){
-    
-    var client_id = 'c19b1f0eeb4b4e948d64cf2521668184';
-    var user_id = '1356887461';
-    var access_token = '1356887461.c19b1f0.f73e6b726c944e81bb6549bff6676b48';
+
+    var user_id = process.env.INSTA_USER;
+    var access_token = process.env.INSTA_ACCESS;
 
     var endpoint = 'https://api.instagram.com/v1/users/';
         endpoint += user_id;

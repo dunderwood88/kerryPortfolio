@@ -1,5 +1,5 @@
 html {
-  font-family: 'Alegreya SC', sans-serif;
+  font-family: 'Palanquin', sans-serif;
   background-image: url(../images/dogsbg.jpg);
   background-repeat: repeat;
   background-size: 100%;
@@ -21,7 +21,7 @@ div.header {
   width: 100%; }
   div.header a {
     float: right;
-    margin-right: 2%; }
+    margin-left: 2%; }
   div.header a.inactive {
     color: #999999; }
   div.header a.inactive:hover {
@@ -32,12 +32,22 @@ div.landingBox {
   text-align: center;
   padding: 10% 4%;
   box-shadow: 1px 1px 8px 1px #999;
-  border-radius: 5px; }
+  border-radius: 5px;
+  width: 70%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  div.landingBox h1 {
+    margin: 2%; }
+  div.landingBox img {
+    max-height: 5em; }
 
-@media screen and (min-width: 70em) {
+@media screen and (min-width: 50em) {
   div.landingBox {
-    width: 30%;
-    margin: 8% auto; } }
+    width: 30%; } }
 div.pageContact {
   width: 100%; }
   div.pageContact div.contentHalf {
@@ -46,15 +56,16 @@ div.pageContact {
   div.pageContact div.contactForm {
     text-align: left; }
     div.pageContact div.contactForm textarea {
-      width: 75%;
+      width: 100%;
       height: 10em; }
     div.pageContact div.contactForm input {
-      width: 30%; }
+      width: 40%; }
     div.pageContact div.contactForm textarea, div.pageContact div.contactForm input {
       border: solid 1px #c3c3c3;
       padding: 0.5%; }
     div.pageContact div.contactForm input#submit {
-      margin-top: 1%; }
+      margin-top: 1%;
+      width: 20%; }
     div.pageContact div.contactForm p.warning {
       color: #bd0000; }
     div.pageContact div.contactForm p.messageSent {
@@ -78,28 +89,14 @@ div.pageContact {
     div.pageContact div.contactForm p.fadein.ng-hide-remove.ng-hide-remove-active {
       opacity: 1; }
 
+div#divInstaFeed {
+  text-align: left; }
+
 header {
   text-align: right; }
 
-.fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  background: transparent;
-  padding: 0; }
-  .fixed-nav-bar li {
-    display: inline-block;
-    margin: 0 25px 16px 25px;
-    font-size: 15px; }
-    .fixed-nav-bar li .active {
-      color: darkred; }
-    .fixed-nav-bar li a {
-      text-decoration: none;
-      color: #444444; }
-    .fixed-nav-bar li a:hover {
-      color: #999999; }
+.contentFull {
+  padding: 0 8%; }
 
 .contentContainer {
   position: absolute;
@@ -108,7 +105,8 @@ header {
   padding: 20px 0;
   text-align: center;
   margin: 0 auto;
-  background-color: #fff; }
+  background-color: #fff;
+  width: 100%; }
 
 .image {
   position: relative;
@@ -118,6 +116,9 @@ header {
   margin: 20px auto;
   padding: 0 10px; }
 
+div.portfolio {
+  padding: 0 2%; }
+
 /*Sketchbook grid styling*/
 div.grid {
   font-size: 0; }
@@ -125,19 +126,27 @@ div.grid {
     font-size: 16px;
     display: inline-block;
     margin: 8px;
-    width: calc(80% - 4px); }
+    padding: 1%; }
     div.grid a img {
       width: 100%; }
 
 @media screen and (min-width: 70em) {
-  div.grid a {
-    width: calc(25% - 6px); }
+  div.grid {
+        /*a.large {
+            //width: calc(33% - 6px);
 
-  div.grid a:nth-of-type(3n) {
+            img{
+                width:auto;
+                max-height: 300px;
+            }
+        }*/ }
+    div.grid a.small {
+      width: calc(29% - 6px); }
+
+  div.grid a:nth-of-type(2n) {
     margin-right: 0; }
 
-  /*  div.grid a:nth-of-type(4n) {
-      margin-right: 0;
-    }*/ }
+  div.grid a:nth-of-type(4n) {
+    margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */

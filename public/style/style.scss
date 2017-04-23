@@ -1,7 +1,7 @@
 //GLOBAL
 //********************************************************************************
 html {
-    font-family: 'Alegreya SC', sans-serif;
+    font-family: 'Palanquin', sans-serif;
     background-image: url(../images/dogsbg.jpg);
     background-repeat:repeat;
     background-size: 100%;
@@ -37,7 +37,7 @@ div.header {
 
     a {
         float: right;
-        margin-right: 2%;
+        margin-left: 2%;
     }
 
     a.inactive {
@@ -60,13 +60,29 @@ div.landingBox{
     padding:10% 4%;
     box-shadow: 1px 1px 8px 1px #999;
     border-radius: 5px;
+
+    width: 70%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    h1 {
+        margin: 2%;
+    }
+
+    img {
+        max-height: 5em;
+    }
 }
 
-@media screen and (min-width: 70em) {
+@media screen and (min-width: 50em) {
 
-    div.landingBox{
+    div.landingBox {
         width: 30%;
-        margin:8% auto;
+        //margin:8% auto;
     }
   }
 //********************************************************************************
@@ -87,12 +103,12 @@ div.pageContact {
         text-align: left;
 
         textarea {
-            width: 75%;
+            width: 100%;
             height: 10em;
         }
 
         input {
-            width: 30%;
+            width: 40%;
         }
 
         textarea, input {
@@ -102,6 +118,7 @@ div.pageContact {
 
         input#submit {
             margin-top: 1%;
+            width: 20%;
         }
 
         p.warning {
@@ -140,41 +157,17 @@ div.pageContact {
     }
 }
 
+div#divInstaFeed {
+    text-align: left;
+}
+
 header {
     text-align: right;
     //padding-top: 90px;
 }
 
-.fixed-nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    background:transparent;
-    padding:0;
-
-    li{
-        display: inline-block;
-        margin: 0 25px 16px 25px;
-        font-size: 15px;
-
-        .active{
-            color:darkred;
-        }
-
-        a {
-            text-decoration: none;
-            color: #444444;
-        }
-
-        a:hover {
-            color: #999999;
-        }
-    }
-
-
-
+.contentFull {
+    padding: 0 8%;
 }
 
 .contentContainer{
@@ -185,6 +178,7 @@ header {
     text-align:center;
     margin:0 auto;
     background-color: #fff;
+    width: 100%;
 }
 
 .image{
@@ -197,6 +191,10 @@ header {
 }
 
 
+div.portfolio {
+    padding: 0 2%;
+}
+
 
 /*Sketchbook grid styling*/
 div.grid{
@@ -206,7 +204,8 @@ div.grid{
         font-size: 16px; 
         display: inline-block;
         margin: 8px;
-        width: calc(80% - 4px);
+        //width: calc(80% - 4px);
+        padding: 1%;
 
         img{
             width:100%;
@@ -215,15 +214,28 @@ div.grid{
 }
 
 @media screen and (min-width: 70em) {
-  div.grid a {
-    width: calc(25% - 6px);
-  }
+    div.grid {
 
-  div.grid a:nth-of-type(3n) {
+        /*a.large {
+            //width: calc(33% - 6px);
+
+            img{
+                width:auto;
+                max-height: 300px;
+            }
+        }*/
+
+        a.small {
+            width: calc(29% - 6px);
+        }
+
+    }
+
+  div.grid a:nth-of-type(2n) {
     margin-right: 0;
   }
 
-/*  div.grid a:nth-of-type(4n) {
+  div.grid a:nth-of-type(4n) {
     margin-right: 0;
-  }*/
+  }
 }
