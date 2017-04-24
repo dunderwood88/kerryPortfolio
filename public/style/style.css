@@ -39,7 +39,7 @@ div.landingBox {
   text-align: center;
   box-shadow: 1px 1px 8px 1px #999;
   border-radius: 5px; }
-  div.landingBox h1 {
+  div.landingBox p {
     font-size: 4.4em;
     margin: 0; }
   div.landingBox img {
@@ -54,7 +54,7 @@ div.landingBox {
       font-size: 1.2em; }
     div.landingBox img {
       max-height: 4em; }
-    div.landingBox h1 {
+    div.landingBox p {
       font-size: 1.6em; } }
 @media (min-device-width: 768px) {
   div.landingBox {
@@ -64,7 +64,7 @@ div.landingBox {
       font-size: 0.8em; }
     div.landingBox img {
       max-height: 4em; }
-    div.landingBox h1 {
+    div.landingBox p {
       font-size: 1.2em; } }
 div.pageContact {
   width: 100%; }
