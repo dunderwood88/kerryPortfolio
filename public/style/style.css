@@ -40,12 +40,12 @@ div.landingBox {
   box-shadow: 1px 1px 8px 1px #999;
   border-radius: 5px; }
   div.landingBox h1 {
-    font-size: 4.8em;
+    font-size: 4.4em;
     margin: 0; }
   div.landingBox img {
-    max-height: 15em; }
+    max-height: 12em; }
   div.landingBox div#divLinks {
-    font-size: 2.6em; }
+    font-size: 2.4em; }
 
 @media (max-device-width: 768px) and (orientation: landscape) {
   div.landingBox {
@@ -53,7 +53,7 @@ div.landingBox {
     div.landingBox div#divLinks {
       font-size: 1.2em; }
     div.landingBox img {
-      max-height: 8em; }
+      max-height: 4em; }
     div.landingBox h1 {
       font-size: 1.6em; } }
 @media (min-device-width: 768px) {
@@ -63,7 +63,7 @@ div.landingBox {
     div.landingBox div#divLinks {
       font-size: 0.8em; }
     div.landingBox img {
-      max-height: 5em; }
+      max-height: 4em; }
     div.landingBox h1 {
       font-size: 1.2em; } }
 div.pageContact {
