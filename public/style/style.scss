@@ -52,16 +52,11 @@ div.header {
 //LANDING PAGE 
 //********************************************************************************
 
-
 div.landingBox{
 
-    background: #fff;
-    text-align:center;
-    padding:10% 4%;
-    box-shadow: 1px 1px 8px 1px #999;
-    border-radius: 5px;
-
     width: 70%;
+
+    //positioning
     position: fixed;
     top: 50%;
     left: 50%;
@@ -69,22 +64,74 @@ div.landingBox{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
+    //general
+    background: #fff;
+    text-align:center;
+
+    //border
+    box-shadow: 1px 1px 8px 1px #999;
+    border-radius: 5px;
+
+
+    //content
     h1 {
-        margin: 2%;
+        font-size: 4.8em;
+        margin: 0;
     }
 
     img {
-        max-height: 5em;
+        max-height: 15em;
+    }
+
+    div#divLinks {
+        font-size: 2.6em;
     }
 }
 
-@media screen and (min-width: 50em) {
-
+//mobile landscape
+@media (max-device-width: 768px) and (orientation: landscape) {
     div.landingBox {
+
         width: 30%;
-        //margin:8% auto;
+
+        div#divLinks {
+            font-size: 1.2em;
+        }
+
+        img {
+            max-height: 8em;
+        }
+
+        h1 {
+            font-size: 1.6em;
+        }
+
     }
-  }
+}
+
+//normal screens
+@media (min-device-width: 768px) {
+    div.landingBox {
+
+        width: 30%;
+        max-width: 320px;
+
+        div#divLinks {
+            font-size: 0.8em;
+        }
+
+        img {
+            max-height: 5em;
+        }
+
+        h1 {
+            font-size: 1.2em;
+        }
+
+    }
+}
+
+
 //********************************************************************************
 
 //CONTACT PAGE 
@@ -193,6 +240,10 @@ header {
 
 div.portfolio {
     padding: 0 2%;
+}
+
+div#divCopyright a {
+    text-decoration: underline;
 }
 
 
